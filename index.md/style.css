@@ -1,0 +1,453 @@
+body{
+    margin:0;
+    padding:0; 
+    background-color: rgb(21,21,30);
+    font-family:  sans-serif, Arial, Helvetica;
+    color: white;
+}
+
+#logo{
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.pimage{
+    clear: both;
+    background-color: khaki;
+    overflow: auto;
+}
+
+
+
+#logo h3{
+    font-weight: lighter;
+    letter-spacing: 7px;
+    position: absolute;
+    place-self: center;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 80%;
+    color: white;
+    animation: headerAnimation 1s ease-in-out;
+    text-shadow: 0px 0px 10px red;
+}
+
+@keyframes headerAnimation{
+    0%{
+        letter-spacing: 20px;
+        
+    }
+    100%{
+        letter-spacing: 7px;
+    }
+}
+@keyframes navAnimation{
+    0%{
+        top: -100px;
+        box-shadow: 0px 0px 0px 0px rgb(219,9,9);
+        
+    }
+    100%{
+        top: 10px;
+        box-shadow: 0px 0px 6px 1px rgb(219,9,9);
+    }
+}
+@keyframes teamsSection{
+    0%{
+        margin-left: -5em;
+        margin-right: 5em;
+    }
+    100%{
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+}
+
+@keyframes secondSection{
+    0%{
+        margin-left: 5em;
+        margin-right: -5em;
+    }
+    100%{
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+}
+
+@keyframes bottomAnimation{
+    0%{
+        margin-top: 5em;
+        margin-bottom: -5em;
+    }
+    100%{
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+}
+
+
+.minorNaviLists:hover a img{
+    left:50%;
+    right:50%;
+    transform: translate(50%,0%);
+}
+
+
+
+#logoImage{
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+.ka{
+    height: 4000px;
+}
+
+
+
+#suggestionSection{
+    display: block;
+    padding: none;
+    padding-bottom: -2em;
+}
+
+#grid-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0px);
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 20em auto;
+    grid-gap: 1em;
+    padding: 1em;
+    margin-top: 0em;
+    max-width: 60em;
+}
+
+.grids{
+    border-width: 1em black;
+    background-color: blue;
+    
+}
+
+.grids:nth-child(3){
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+    background-color: rgb(43, 43, 73);
+}
+
+.grids:nth-child(4){
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+    background-color: rgb(43, 43, 73);
+
+}
+
+
+.grids:nth-child(1){
+    list-style: none;
+    background-color: rgb(43, 43, 73);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: block;
+    position: relative;
+    border-radius: 2em;
+    white-space: nowrap;
+    top :0px;
+    padding-right: 1em;
+    padding-left: 0px;
+    min-width: 100px;
+    animation: teamsSection 1s ease-in-out;
+    box-shadow: 0px 0px 100px 2px rgb(18, 18, 20);
+}
+
+
+
+.grids:nth-child(1) li{
+    display: block;
+    position: relative;
+    border-radius: 1.5em;
+    padding: 2px;
+    margin-bottom: 1em;
+    background-color: red;
+    box-shadow: 0px 0px 100px 2px black;
+    margin-left: -1.5em;
+}
+
+.grids:nth-child(1) li:nth-child(1){
+    background-color: rgb(40, 42, 44);
+}
+
+.grids:nth-child(1) li:nth-child(2){
+    background-color: red;
+    padding: 2px 7px;
+}
+
+.grids:nth-child(1) li:nth-child(5){
+    background-color: rgb(14, 25, 41);
+}
+
+.grids:nth-child(1) li:nth-child(4){
+    background-color: white;
+}
+
+.grids:nth-child(1) li:nth-child(3){
+    background-color: rgb(244, 175, 62);
+}
+
+.grids:nth-child(1) li:nth-child(6){
+    background-color: white;
+}
+
+.grids:nth-child(1) li:nth-child(7){
+    background-color: white;
+}
+
+.grids:nth-child(1) li:nth-child(8){
+    background-color: rgb(145, 46, 67);
+}
+
+.grids:nth-child(1) li:nth-child(9){
+    background-color: rgb(249, 118, 24);
+}
+
+.grids:nth-child(1) li:nth-child(10){
+    background-color: rgb(98, 0, 255);
+    padding: 2px 8p;
+    margin-right: 0px;
+
+}
+
+.grids:nth-child(1) li a img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 5em;
+    width: inherit;
+    border-radius: 1em;
+}
+
+.grids:nth-child(2){
+    border-radius: 1.6em;
+    padding: 1em;
+    background-color: rgb(43, 43, 73);
+    box-shadow: 0px 0px 100px 2px rgb(18, 18, 20);
+    animation: secondSection 1s ease-in-out;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    word-wrap: none;
+}
+
+#rennenkalender{
+    list-style-type: none;
+    list-style: none;
+    
+}
+
+
+
+#rennenkalender li{
+    position: relative;
+    margin-left: -2em;
+
+}
+
+#rennenkalender li img{
+    margin-left: -2em;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 3em;
+        height: auto;
+    transform: translateY(-100%);
+    border-radius: 0.2em;
+}
+#rennenkalender hr{
+    margin-left: -2em;
+    color: rgb(31, 31, 49);
+}
+
+#rennenkalender li h4{
+    margin-left: -2em;
+
+}
+
+.grids:nth-child(4){
+    left: 0px;
+    font-size: 30px;
+    box-shadow: 0px 0px 100px 2px rgb(18, 18, 20);
+    animation: bottomAnimation 1s ease-in-out;
+}
+
+.grids:nth-child(3) {
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: block;
+    padding: 1em;
+    padding-bottom: 0em;
+    border-radius: 1.6em;
+    padding-left: 0.8em;
+    box-shadow: 0px 0px 100px 2px rgb(18, 18, 20);
+    animation: bottomAnimation 1s ease-in-out;
+    font-size: 18px;
+}
+
+.grids:nth-child(3) a{
+    display: inline-block;
+    width: 10em;
+    height: 11em;
+    margin-right: 0.8em;
+    border-radius: 1.2em;
+    overflow: hidden;
+}
+
+
+.grids:nth-child(3) a:last-child{
+    margin-right: none;
+}
+.grids:nth-child(3) table {
+    position: relative;
+}
+
+
+.grids:nth-child(3) table tr td a p{
+    background-color: rgb(71, 71, 101);
+    display: inline-block;
+    bottom: 0px;
+    width: 9em;
+    padding: 0.5em;
+    padding-bottom: none;
+    position: absolute;
+    top:4.5em;
+    color: white;
+    box-shadow: 0em 0em 1em 1px rgb(28, 28, 32);
+    white-space: normal;
+    word-wrap: break-word;
+    margin-bottom: -3;
+    border-radius: 0 0 1.2em 1.2em;
+}
+.grids:nth-child(3) table tr td a p span{
+    background-color: red;
+}
+
+
+.grids:nth-child(3) a img{
+    box-shadow: 0em 0em 1em 1px rgb(28, 28, 32);
+    top:0px;
+    display: inline-block;
+    position: relative;
+    top:0px;
+    width: inherit;
+}
+
+.grids:nth-child(4){
+    font-size: 20px;
+    position:static;
+    padding: 1.2em;
+    padding-top: 1em;
+    float: none;
+    max-width: none;
+    box-shadow: 0em 0em 20px 6px rgb(19, 17, 17);
+    text-align: left;
+
+    border-radius: 2em;
+}
+
+.grids:nth-child(4) h2{
+    font-size: 30px;
+}
+
+.grids:nth-child(4) article{
+    display: inline-block;
+    max-width: none;
+    text-align: justify ;
+}
+
+iframe{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+@media screen and (max-device-width: 500px){
+    body{
+        font-size: 40px;
+    }
+
+    #logo{
+        margin-bottom: 60px;
+        
+    }
+
+    #logo h3{
+        text-shadow: 0px 0px 10px red;
+        letter-spacing: 15px;
+    }
+
+    #grid-container{
+        grid-template-columns: 4fr 8fr;
+    }
+
+    #grid-container{
+        max-width: none;
+    }
+    
+    .grids:nth-child(3) {
+        font-size: 40px;
+    }
+
+    .grids:nth-child(4){
+        font-size: 40px;
+    }
+
+    .grids:nth-child(4) h2{
+        font-size: 70px;
+    }
+
+    .grids:nth-child(1) li{
+        margin-left: 0em;
+    }
+
+    .grids:nth-child(2){
+        font-size: 20px;
+        border-radius: 4em;
+    }
+
+    #rennenkalender li img{
+        width: 5em;
+        height: auto;
+        transform: translateY(-100%);
+        border-radius: 0.5em;
+        margin-top: -1em;
+    }
+   
+
+    @keyframes headerAnimation{
+        0%{
+            letter-spacing: 30px;
+        }
+        100%{
+            letter-spacing: 15px;
+
+        }
+    }
+    @keyframes navAnimation{
+        0%{
+            top: -200px;
+            box-shadow:0px 0px 0px 0px  red;
+            
+        }
+        100%{
+            top: 10px;
+            box-shadow:0px 0px 20px 3px  red;
+        }
+    }
+
+    
+}
